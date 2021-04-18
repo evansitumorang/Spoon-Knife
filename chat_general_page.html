@@ -14,32 +14,23 @@
 			background-color: cyan;
 		}
 	</style>
+	
 	<div class="base">
 	<div class="topPage">
 	<h1><center>Lippo Live Chat</center></h1>
 	<div>
 	</div>
+		
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 	<style type='text/css'>
-	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #005290;
-		font-family: "Arial", sans-serif;
-	}
-	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #005290;
-	}
-</style>
-
-
-<style type='text/css'>
-	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #005290;
-		font-family: "Arial", sans-serif;
-	}
-	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #005290;
-	}
-</style>
+		.embeddedServiceHelpButton .helpButton .uiButton {
+			background-color: #005290;
+			font-family: "Arial", sans-serif;
+		}
+		.embeddedServiceHelpButton .helpButton .uiButton:focus {
+			outline: 1px solid #005290;
+		}
+	</style>
 
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
@@ -61,13 +52,6 @@
 		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
 		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
 		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
-		
-		/*embedded_svc.settings.prepopulatedPrechatFields = {
-			//FirstName: "Ben",
-			//LastName: "Kell",
-			Pre_Chat_Project__c: "Holland Village Jakarta",
-			Subject: "Holland Village Jakarta"
-		}; //Sets the auto-population of pre-chat form fields*/
 
 		embedded_svc.settings.extraPrechatFormDetails = [
 		  {
@@ -98,8 +82,8 @@
 		  ];
 		
 		embedded_svc.settings.prepopulatedPrechatFields = {
-			FirstName: "Tyrone",
-			LastName: "Jamal",
+			//FirstName: "Tyrone",
+			//LastName: "Jamal",
 			Project: "Holland Village Jakarta",
 			Subject: "Subject"
 		}; //Sets the auto-population of pre-chat form fields
@@ -112,13 +96,13 @@
 			'https://dev-lippokarawaci.cs5.force.com/lippobot',
 			gslbBaseURL,
 			'00DO00000056VEc',
-			'Chat_Agents',
+			'Chat_General',
 			{
 				baseLiveAgentContentURL: 'https://c.la1-c1cs-ukb.salesforceliveagent.com/content',
 				deploymentId: '572O00000004CbR',
-				buttonId: '573O00000004CkY',
+				buttonId: '573O0000000Cb4j',
 				baseLiveAgentURL: 'https://d.la1-c1cs-ukb.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'Chat_Agents',
+				eswLiveAgentDevName: 'Chat_General',
 				isOfflineSupportEnabled: false
 			}
 		);
