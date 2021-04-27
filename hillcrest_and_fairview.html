@@ -61,13 +61,6 @@
 		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
 		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
 		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
-		
-		embedded_svc.settings.prepopulatedPrechatFields = {
-			//FirstName: "Ben",
-			//LastName: "Kell",
-			Project: "Hillcrest & Fairview House",
-			Subject: "Hillcrest & Fairview House"
-		}; //Sets the auto-population of pre-chat form fields
 
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
@@ -91,14 +84,22 @@
 		  },
 		  {
 			"label":"Project", 
-			"transcriptFields": ["Pre_Chat_Project__c"]
+			"transcriptFields": ["Pre_Chat_Project__c"],
+			"value": 'Hillcrest & Fairview House'
 		  },
 		  {
 			"label":"Subject", 
 			"transcriptFields": ["Pre_Chat_Subject__c"]
 		  }
 		  ];
-
+		
+		embedded_svc.settings.prepopulatedPrechatFields = {
+			//FirstName: "Ben",
+			//LastName: "Kell",
+			Pre_Chat_Project__c: "Hillcrest & Fairview House"
+			//Subject: "Hillcrest & Fairview House"
+		}; //Sets the auto-population of pre-chat form fields
+		
 		embedded_svc.init(
 			'https://ptlippokarawacitbk2--dev.my.salesforce.com',
 			'https://dev-lippokarawaci.cs5.force.com/lippobot',
