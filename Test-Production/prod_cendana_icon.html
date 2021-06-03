@@ -83,34 +83,22 @@
 			"label":"Mobile", 
 			"transcriptFields": ["Pre_Chat_Mobile__c"]
 		  },
-		  /*{
-			"label":"Project", 
-			"transcriptFields": ["Pre_Chat_Project__c"],
-			"value": "Holland Village Jakartas"
-		  },*/
 		  {
 			"label":"Subject", 
 			"transcriptFields": ["Pre_Chat_Subject__c"] 
 		  }
 		  ];
-		
-		embedded_svc.settings.prepopulatedPrechatFields = {
-			FirstName: "Ben",
-			LastName: "Kell",
-			//Pre_Chat_Project__c: "Cendana Homes",
-			Pre_Chat_Subject__c: "Cendana Icon Inquiry"
-		}; //Sets the auto-population of pre-chat form fields
 
 		embedded_svc.init(
 			'https://ptlippokarawacitbk2.my.salesforce.com',
 			'https://lippokarawaci.secure.force.com/liveAgentSetupFlow',
 			gslbBaseURL,
 			'00D5g000001EBcX',
-			'Chat_Cendana_Homes',
+			'Chat_Cendana_Icon',
 			{
 				baseLiveAgentContentURL: 'https://c.la2-c1-ukb.salesforceliveagent.com/content',
 				deploymentId: '5725g000000PRcl',
-				buttonId: '5735g000000PUPl',
+				buttonId: '5735g000000Pb7g',
 				baseLiveAgentURL: 'https://d.la2-c1-ukb.salesforceliveagent.com/chat',
 				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I5g000000GzUbEAK_178e85506b0',
 				isOfflineSupportEnabled: false
