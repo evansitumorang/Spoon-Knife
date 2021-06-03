@@ -2,8 +2,7 @@
 <head>
 </head>
 <body>
-
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
@@ -62,19 +61,23 @@
 			"transcriptFields": ["Pre_Chat_Subject__c"] 
 		  }
 		  ];
+		
+		embedded_svc.settings.prepopulatedPrechatFields = {
+			
+		}; //Sets the auto-population of pre-chat form fields
 
 		embedded_svc.init(
 			'https://ptlippokarawacitbk2.my.salesforce.com',
 			'https://lippokarawaci.secure.force.com/liveAgentSetupFlow',
 			gslbBaseURL,
 			'00D5g000001EBcX',
-			'Chat_Cendana_Homes',
+			'Chat_Embarcadero_Bintaro',
 			{
 				baseLiveAgentContentURL: 'https://c.la2-c1-ukb.salesforceliveagent.com/content',
 				deploymentId: '5725g000000PRcl',
-				buttonId: '5735g000000PUPl',
+				buttonId: '5735g000000PUUD',
 				baseLiveAgentURL: 'https://d.la2-c1-ukb.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I5g000000GzUbEAK_178e85506b0',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I5g000000GzV0EAK_178e907f559',
 				isOfflineSupportEnabled: false
 			}
 		);
